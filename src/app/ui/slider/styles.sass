@@ -1,0 +1,20 @@
+.slider
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+    width: 100%
+
+    gap: 2rem
+
+    &__list
+        display: flex
+        gap: 2rem
+        overflow-x: scroll
+
+    &__list::-webkit-scrollbar
+        display: none
+
+    &__button
+        &__right
+            transform: rotate(180deg)
