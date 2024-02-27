@@ -23,21 +23,22 @@
         flex: 5
 
     &__img
-        height: 35rem
+        aspect-ratio: 1 / 1
         width: 100%
         object-fit: cover
 
         border-radius: .5rem
 
+.sales
+    & .item__img
+        min-width: 13rem
+
 .categories
     &__list
-        display: grid
-
-        grid-template-areas: "category subcategory"
-        grid-auto-flow: row
+        display: flex
+        flex-direction: column
 
         align-items: center
-        justify-content: flex-start
 
         column-gap: 4rem
         row-gap: 1.5rem
@@ -53,9 +54,8 @@
 
     &__sublist
         display: flex
+        flex-wrap: wrap
         gap: 1.5rem
-
-        width: 100%
 
         & > .btn-1
             padding: .75rem 1.5rem

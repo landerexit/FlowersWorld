@@ -1,0 +1,54 @@
+.about
+    display: flex
+    flex-direction: row
+
+    align-items: flex-start
+
+    height: max-content
+
+    gap: 6rem
+
+    & > *
+        flex: 2
+
+    & .title
+        margin-bottom: 2rem
+
+    &__description
+        margin-top: 1rem
+        font-size: 1.5rem
+        width: 100%
+
+    & .logo
+        font-size: 1.75rem
+
+    &__slider
+        width: 100%
+
+        & > img
+            aspect-ratio: 1 / 1
+            object-fit: cover
+            border-radius: .5rem
+
+    &__info
+        width: 100%
+
+    &__contacts
+        padding-top: 2rem
+        display: grid
+        gap: 1rem
+        grid-template-columns: max-content 1fr
+
+        font-size: 1.4rem
+
+        & > h2
+            font-weight: 600
+
+    &__map
+        width: 100%
+
+        aspect-ratio: 5 / 3
+        object-fit: cover
+
+        &__wrapper
+            flex: 3

@@ -66,13 +66,13 @@ function Footer() {
                             <Link href="/">Главная</Link>
                         </li>
                         <li>
-                            <Link href="/catalog">Каталог</Link>
+                            <Link href="/catalog/">Каталог</Link>
                         </li>
                         <li>
-                            <Link href="/about">О нас</Link>
+                            <Link href="/about/">О нас</Link>
                         </li>
                         <li>
-                            <Link href="/where">Где нас найти?</Link>
+                            <Link href="/about/where/">Где нас найти?</Link>
                         </li>
                     </ul>
                 </nav>

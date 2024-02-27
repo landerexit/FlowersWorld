@@ -14,7 +14,7 @@ function Header() {
 
     return (
         <header className="header max-width">
-            <Link className="header__logo" href="/">
+            <Link className="logo" href="/">
                 <Image
                     src="/assets/icons/logo.svg"
                     alt="Логотип"
@@ -26,13 +26,13 @@ function Header() {
             <nav className="header__nav">
                 <ul>
                     <li>
-                        <a href="/catalog">Каталог</a>
+                        <a href="/catalog/">Каталог</a>
                     </li>
                     <li>
-                        <a href="/about">О нас</a>
+                        <a href="/about/">О нас</a>
                     </li>
                     <li>
-                        <a href="/where">Где нас найти?</a>
+                        <a href="/about/where/">Где нас найти?</a>
                     </li>
                 </ul>
             </nav>

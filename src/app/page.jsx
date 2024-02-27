@@ -5,68 +5,62 @@ import Link from "next/link";
 
 function Home() {
     const categories = [
-        {
-            name: "композиции",
-            list: [
-                {
-                    name: "Каскадные",
-                    id: 0
-                },
-                {
-                    name: "Круглые",
-                    id: 1
-                },
-                {
-                    name: "Каркасные",
-                    id: 2
-                },
-                {
-                    name: "Линейные",
-                    id: 3
-                },
-                {
-                    name: "Букеты",
-                    id: 4
-                },
-                {
-                    name: "Ассиметричные",
-                    id: 5
-                }
-            ] 
-        },
-        {
-            name: "букеты",
-            list: [
-                {
-                    name: "Розы",
-                    id: 6
-                },
-                {
-                    name: "Пионы",
-                    id: 7
-                },
-                {
-                    name: "Хризантемы",
-                    id: 8
-                },
-                {
-                    name: "Тюльпаны",
-                    id: 9
-                },
-                {
-                    name: "Альстромерии",
-                    id: 10
-                },
-                {
-                    name: "Гарберы",
-                    id: 11
-                },
-                {
-                    name: "Гортензии",
-                    id: 12
-                }
-            ] 
-        },
+        [
+            {
+                name: "Каскадные",
+                id: 0
+            },
+            {
+                name: "Круглые",
+                id: 1
+            },
+            {
+                name: "Каркасные",
+                id: 2
+            },
+            {
+                name: "Линейные",
+                id: 3
+            },
+            {
+                name: "Букеты",
+                id: 4
+            },
+            {
+                name: "Ассиметричные",
+                id: 5
+            }
+        ],
+        [
+            {
+                name: "Розы",
+                id: 6
+            },
+            {
+                name: "Пионы",
+                id: 7
+            },
+            {
+                name: "Хризантемы",
+                id: 8
+            },
+            {
+                name: "Тюльпаны",
+                id: 9
+            },
+            {
+                name: "Альстромерии",
+                id: 10
+            },
+            {
+                name: "Гарберы",
+                id: 11
+            },
+            {
+                name: "Гортензии",
+                id: 12
+            }
+        ],
     ];
 
     const salesData = [
@@ -144,8 +138,8 @@ function Home() {
                         <br /> для самых любимых
                     </h1>
                     <p className="hero__descr">
-                        Не упустите возможность удивить своих близких
-                        <br /> восхитительно красивыми цветами
+                        Не упустите возможность порадовать 
+                        <br />своих близких восхитительно красивыми цветами
                     </p>
                     <Link
                         className="btn-1"
@@ -166,25 +160,18 @@ function Home() {
             </section>
 
             <section className="categories page__tile">
+                <h2 className="title title-clr">Категории</h2>
                 <div className="categories__list">
                     {
                         categories.map((category, categoryIndex) => {
                             return (
                                 <>
-                                    <h3
-                                        className="categories__name"
-                                        key={"category" + categoryIndex}
-                                    >
-                                        {
-                                           category.name + ":"
-                                        }
-                                    </h3>
                                     <div 
                                         className="categories__sublist"
                                         key={"categoryList" + categoryIndex}
                                     >
                                         {
-                                            category.list.map((subcategory, subcategoryIndex)=>{
+                                            category.map((subcategory, subcategoryIndex)=>{
                                                 return (
                                                     <Link 
                                                         key={"subcategory" + category.name + subcategoryIndex}

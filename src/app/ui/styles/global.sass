@@ -11,8 +11,28 @@ body
 
     font-family: 'Qanelas'
 
+    background-color: white
+
+    min-height: 100vh
+
+.logo
+    display: flex
+    align-items: center
+
+    gap: .75rem
+
+    font-size: 1rem
+
+    & > img
+        min-height: 3em
+
+    & > p
+        font-size: 2em
+        font-weight: bold
+        text-transform: uppercase
+
 .max-width
-    max-width: 90rem
+    max-width: 80rem
     width: 100%
 
     padding: 1rem 2rem
@@ -57,11 +77,11 @@ body
     flex-direction: column
 
     padding-top: 2rem
-    padding-bottom: 8rem
-
-    min-height: 100vh
+    padding-bottom: 5rem
 
     gap: 7rem
+
+    min-height: 100%
 
     &__tile
         display: flex
@@ -69,3 +89,36 @@ body
         align-items: center
 
         gap: 3rem
+
+.not-found
+    width: 100%
+    height: 60vh
+
+    display: flex
+    flex-direction: column
+
+    justify-content: center
+    align-items: center
+
+    & > h1
+        display: flex
+        flex-direction: column
+        align-items: center
+
+        line-height: 9rem
+
+        font-size: 9.5rem
+        font-weight: 900
+
+        & > span
+            font-size: 4rem
+            line-height: 3.5rem
+
+            color: rgba(0, 0, 0, 20%)
+            font-weight: bold
+
+    & > p
+        font-size: 1.5rem
+
+        margin-top: 2rem
+        font-weight: 400
